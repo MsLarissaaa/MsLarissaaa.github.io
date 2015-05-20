@@ -157,6 +157,17 @@ p {
 
 a.purple {
   color: #A8A2E8;
+  text-decoration: none;
+}
+
+a.purple:visited {
+  color: #FF73C7;
+  text-decoration: none;
+}
+
+a.pink {
+  color: #FF73C7;
+  text-decoration: none;
 }
 
 a.purple:visited {
