@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>Larissa's DBC Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <h1>Introduction to Arrays and Hashes</h1>
+  <h2>A beginner's guide to the differences between arrays and hashes <br> in Ruby and when to use them</h2>
+  <h4>May 17, 2015</h4>
+
+  <section>
+    <p>
+      It won't be long after you begin learning Ruby that you realize how useful arrays and hashes are. You can think of an array as a list, a collection of data in some kind of order. Every slot in the list acts like a variable, where you can see what object each slot points to and identify an element, or piece of data, by using its slot position on the list. Since programming counts starting from zero, the first slot in the array is indexed as slot zero. The following is an example of an array:
+    </p>
+    <p>
+        puppies = ['LaSalle', 'Stella', 'Sophie', 'BeBop']
+      <br>
+        puts puppies[0] # => LaSalle
+      <br>
+        puts puppies[1] # => Stella
+      <br>
+        puts puppies[2] # => Sophie
+      <br>
+        puts puppies[3] # => BeBop
+      <br>
+        puts puppies # => LaSalle
+                          Stella
+                          Sophie
+                          BeBop
+    </p>
+    <p>
+      Both arrays and hashes are collections used to store and retrieve data. A hash (sometimes called an associative array) is similar to an array, except that a hash works as a dictionary-like collection of unique keys and their values. Where an array uses integers as its index, a hash allows you to use any object type. You can think of a hash as a collection of data pairs, where each element (name) in the hash is linked to a specific result (value). According to ruby-doc.org, "Hashes enumerate their values in the order that the corresponding keys were inserted." An example of a hash is as follows, where we want to know what kind of breed mix each puppy is by linking it to the dog's name in a hash:
+    </p>
+    <p>
+      breed_mix = { LaSalle: "Labrador", Stella: "Bulldog", Sophie: "Boxer", BeBop: "Hound" }
+    <br>
+      puts breed_mix[:LaSalle] # => Labrador
+    <br>
+      puts breed_mix[:Stella] # => Bulldog
+    <br>
+      puts breed_mix[:Sophie] # => Boxer
+    <br>
+      puts breed_mix[:BeBop] # => Hound
+    </p>
+    <p>
+      How do you know when it's better to use an array or a hash? It depends on the kind of list you want to create and access. A simple array will work for a collection of elements that you just need to call by the index (order) number to list out, such as words in a sentence, days of the week, and so on. A hash will be more useful where you want to retrieve data using a key value, such as with grades assigned to particular students or a table of contents with corresponding page numbers. You can store any type of value in both arrays and hashes. Moreover, you can have arrays inside of arrays, arrays inside of hashes, hashes inside of arrays and hashes inside of hashes, depending on what you want to program or index. It is worth experimenting with the basic forms of both of these in order to better understand their differences and how to apply each one in a given situation.
+    </p>
+    <p>
+
+    </p>
+    <p>
+
+  </section>
+</main>

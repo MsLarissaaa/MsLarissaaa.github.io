@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>Larissa's DBC Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <h1>Inline with CSS</h1>
+  <h2>Exploring the differences between display inline vs inline blocks in CSS</h2>
+  <h4>May 11, 2015</h4>
+
+  <section>
+    <p>
+      A potentially confusing concept when learning about positioning with CSS is the subtle similarities and differences between what it means to display inline versus inline blocks. To begin with, inline elements respect right and left margins and padding, but not top and bottom. They cannot have a set height and width. An inline element has no line break before or after it, and it allows other HTML elements to sit to its left and right.
+    </p>
+    <p>
+      By contrast, block elements respect all margins and padding, left, right, top and bottom. They also force a line break after the block element. A block element has some whitespace above and below it, and it does not allow any other HTML elements next to it. The following is an example of elements with set height and width displayed as blocks:
+    </p>
+    <img src="../images/Block-Elements.png"/>
+    <p>
+      Finally, an inline-block element is placed as an inline element (i.e. on the same line as adjacent content), but it behaves like a block element. Inline-block elements respect top and bottom margins and padding. They allow other elements to sit to their left and right, and they respect height and width. Displaying elements as inline-blocks will cause them to appear as in the image below.
+    </p>
+    <img src="../images/Inline-Block-Elements.png"/>
+  </section>
+</main>
