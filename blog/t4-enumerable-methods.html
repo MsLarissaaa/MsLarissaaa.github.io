@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>Larissa's DBC Technical Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+
+  <h1>Mapping the Way with the #map Enumerable!</h1>
+  <h2>Using #map/#collect for object-oriented programming in Ruby</h2>
+  <h4>May 24, 2015</h4>
+
+  <section>
+    <p>
+      Enumerables are an essential component of object-oriented programming in Ruby. The Enumerable module provides a set of methods to traverse, search, sort and manipulate collections. The class must provide a method 'each', which yields successive members of the collection for the enumerable method(s) to operate on. Many enumerables use blocks, chunks of code between braces or between 'do- end' that are associated with method invocations. A Ruby block is a way of grouping statements almost like parameters. The code in the block is not executed at the time it is encountered; rather, Ruby remembers the context in which the block appears and then runs the method.
+    </p>
+    <p>
+      One useful enumerable that primarily relies on blocks is the #map enumerator. #Map returns a new array with the results of running a block once for every element in the preceding enum. Another way of saying this is that #map will invoke the given block once for each element of the object it is applied to, and it creates a new array containing the values returned by the block. If no block is given, an enumerator is returned instead. #Collect is another alias for #map in Ruby. The formats for #map are as follows:
+      <br>
+      <br>
+      map{ |obj| block } --> array
+      <br>
+      map --> an_enumerator
+    </p>
+    <p>
+      Here are some examples of how #map/#collect works:
+      <br>
+      <br>
+      (1..5).map { |i| i*i }  #=> [1, 4, 9, 16, 25]
+      <br>
+      (1..5).collect { "dog" }  #=> ["dog", "dog", "dog", "dog", "dog"]
+      <br>
+      <br>
+      #Collect and #map (in Ruby they are the same) will both run your block and give you an object filled with whatever your block returned each time. You can think of it as iterating a block method over inputs and collecting the results in an array. This enumerable is therefore most helpful when you want the collected results of a block over enum to be returned as an array.
+    </p>
+  </section>
+</main>
+
